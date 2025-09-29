@@ -10,8 +10,12 @@ import LoginPage from './pages/LoginPage';
 import Dashboard from './pages/Dashboard';
 import MRVUpload from './pages/MRVUpload';
 import CarbonCredits from './pages/CarbonCredits';
+import Wallet from './pages/Wallet';
 import AdminPanel from './pages/AdminPanel';
 import ActivityFeed from './pages/ActivityFeed';
+import Sensors from './pages/Sensors';
+import Marketplace from './pages/Marketplace';
+import SatelliteMapping from './pages/SatelliteMapping';
 
 // Custom theme for blue carbon registry
 const theme = createTheme({
@@ -86,6 +90,10 @@ function App() {
                 <Route index element={<Dashboard />} />
                 <Route path="mrv-upload" element={<MRVUpload />} />
                 <Route path="carbon-credits" element={<CarbonCredits />} />
+                <Route path="satellite-mapping" element={<SatelliteMapping />} />
+                <Route path="marketplace" element={<Marketplace />} />
+                <Route path="wallet" element={<Wallet />} />
+                 <Route path="sensors" element={<Sensors />} />
                 <Route path="admin" element={<AdminPanel />} />
                 <Route path="activity" element={<ActivityFeed />} />
               </Route>

@@ -132,10 +132,7 @@ const LoginPage = () => {
           Connect Wallet
         </Typography>
         
-        <Alert severity="info" sx={{ mb: 3 }}>
-          <strong>Demo Mode:</strong> This is a frontend-only demonstration. 
-          Wallet connections and blockchain interactions are simulated.
-        </Alert>
+        
         
         {/* Role Selection */}
         <FormControl fullWidth sx={{ mb: 3 }}>

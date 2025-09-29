@@ -1,5 +1,8 @@
 import React, { useState } from 'react';
 import { Outlet, useNavigate, useLocation } from 'react-router-dom';
+import { Sensors as SensorsIcon } from '@mui/icons-material';
+import { Store as MarketplaceIcon } from '@mui/icons-material';
+import { Satellite as SatelliteIcon } from '@mui/icons-material';
 import {
   AppBar,
   Toolbar,
@@ -90,13 +93,19 @@ const Layout = () => {
     setUserMenuAnchor(null);
   };
   
-  const menuItems = [
-    { text: 'Dashboard', icon: <DashboardIcon />, path: '/' },
-    { text: 'MRV Upload', icon: <UploadIcon />, path: '/mrv-upload' },
-    { text: 'Carbon Credits', icon: <TokenIcon />, path: '/carbon-credits' },
-    ...(state.userRole === 'Admin' ? [{ text: 'Admin Panel', icon: <AdminIcon />, path: '/admin' }] : []),
-    { text: 'Activity Feed', icon: <ActivityIcon />, path: '/activity' },
-  ];
+ // Add to the menuItems array in Layout.js
+const menuItems = [
+  { text: 'Dashboard', icon: <DashboardIcon />, path: '/' },
+  { text: 'MRV Upload', icon: <UploadIcon />, path: '/mrv-upload' },
+  { text: 'Carbon Credits', icon: <TokenIcon />, path: '/carbon-credits' },
+  { text: 'Marketplace', icon: <MarketplaceIcon />, path: '/marketplace' },
+    { text: 'Satellite Mapping', icon: <SatelliteIcon />, path: '/satellite-mapping' },
+  { text: 'Wallet', icon: <WalletIcon />, path: '/wallet' }, // Add this line
+   { text: 'Sensors', icon: <SensorsIcon />, path: '/sensors' },
+  ...(state.userRole === 'Admin' ? [{ text: 'Admin Panel', icon: <AdminIcon />, path: '/admin' }] : []),
+  { text: 'Activity Feed', icon: <ActivityIcon />, path: '/activity' },
+];
+
   
   // Mobile Bottom Navigation
   const BottomNav = () => {

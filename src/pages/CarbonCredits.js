@@ -69,11 +69,12 @@ const CarbonCredits = () => {
   };
   
   const formatCurrency = (amount) => {
-    return new Intl.NumberFormat('en-US', {
-      style: 'currency',
-      currency: 'USD'
-    }).format(amount);
-  };
+  return new Intl.NumberFormat('en-IN', {
+    style: 'currency',
+    currency: 'INR',
+    maximumFractionDigits: 0
+  }).format(amount);
+};
   
   const totalActiveCredits = state.carbonCredits
     .filter(credit => credit.status === 'Active')

@@ -85,7 +85,7 @@ export const mockCarbonCredits = [
     issuedDate: "2024-01-15",
     expiryDate: "2034-01-15",
     verifier: "Global Carbon Verification Ltd.",
-    price: 25.50
+    price: 2117
   },
   {
     id: 2,
@@ -98,7 +98,7 @@ export const mockCarbonCredits = [
     issuedDate: "2024-02-20",
     expiryDate: "2034-02-20",
     verifier: "Ocean Conservation Verifiers",
-    price: 22.75
+    price: 1888
   },
   {
     id: 3,
@@ -111,7 +111,7 @@ export const mockCarbonCredits = [
     issuedDate: "2024-01-10",
     expiryDate: "2034-01-10",
     verifier: "Coastal Ecosystem Validators",
-    price: 20.00
+    price: 1660
   },
   {
     id: 4,
@@ -124,7 +124,7 @@ export const mockCarbonCredits = [
     issuedDate: "2024-03-05",
     expiryDate: "2034-03-05",
     verifier: "Wetland Conservation Authority",
-    price: 28.00
+    price: 2324
   },
   {
     id: 5,
@@ -137,7 +137,7 @@ export const mockCarbonCredits = [
     issuedDate: "2024-03-15",
     expiryDate: "2034-03-15",
     verifier: "Global Carbon Verification Ltd.",
-    price: 25.50
+    price: 2117
   }
 ];
 
